@@ -18,5 +18,4 @@ wheel==0.45.1
 typing-extensions==4.12.2
 
 sentence-transformers
-fastapi
 requests
