@@ -113,3 +113,21 @@ docker-compose up --build
 - Add support for multi-hop retrieval and conversational query memory.  
 - Extend metadata storage for better traceability and auditing.  
 - Optimize for GPU-based deployments and scalable inference.
+
+9. Alternative Models Considered
+Several models were evaluated during development, but not adopted due to limitations related to hallucination, inference speed, or deployment constraints. Our goal was to strike a practical balance between generation quality, semantic relevance, and runtime efficiency.
+
+LaBSE: Produced strong multilingual embeddings, but inference was significantly slower, and it underperformed on short-form queries during testing.
+
+LLaMA2-7B: Delivered high-quality completions but required GPU resources we couldn’t support in our local or Docker-based setup. It also exhibited factual drift in longer responses.
+
+Mistral-7B-Instruct: Promising for accurate answers, but prone to hallucination in Spanish when retrieval context was limited. Integration via TGI was also less stable at the time.
+
+Ultimately, we selected Qwen2.5-0.5B-Instruct and multilingual-e5-small for their stable performance, reasonable accuracy, and low latency, especially in CPU-constrained environments.
+
+
+
+
+
+
+
