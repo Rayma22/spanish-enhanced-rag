@@ -1,0 +1,22 @@
+# Core Dependencies
+fastapi==0.115.11
+uvicorn==0.34.0
+pydantic==2.10.6
+
+# ML and Data Processing
+numpy==1.26
+scipy==1.15.2
+transformers==4.49.0
+huggingface_hub==0.29.3
+torch==2.2.1
+sentence-transformers==2.6.0
+scikit-learn==1.6.0
+
+# Utilities
+setuptools==76.1.0
+wheel==0.45.1
+typing-extensions==4.12.2
+
+sentence-transformers
+fastapi
+requests
