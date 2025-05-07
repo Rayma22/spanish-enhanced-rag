@@ -114,7 +114,9 @@ docker-compose up --build
 - Extend metadata storage for better traceability and auditing.  
 - Optimize for GPU-based deployments and scalable inference.
 
-9. Alternative Models Considered
+---
+
+## 9. Alternative Models Considered
 Several models were evaluated during development, but not adopted due to limitations related to hallucination, inference speed, or deployment constraints. Our goal was to strike a practical balance between generation quality, semantic relevance, and runtime efficiency.
 
 LaBSE: Produced strong multilingual embeddings, but inference was significantly slower, and it underperformed on short-form queries during testing.
